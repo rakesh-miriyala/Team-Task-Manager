@@ -9,7 +9,7 @@ import apiRouter from './src/backend/routes/api.ts';
 
 dotenv.config();
 
-const DATABASE_URL = process.env.DATABASE_URL || 'file:./dev.db';
+const DATABASE_URL = process.env.DATABASE_URL || 'file:./prisma/dev.db';
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret-for-dev-only';
 
 async function startServer() {
